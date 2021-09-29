@@ -215,8 +215,6 @@ bool test_13 () {
     return true;
 }
 
-
-
 bool start_tests() {
     bool result = true;
     

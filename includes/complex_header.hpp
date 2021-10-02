@@ -26,7 +26,11 @@ struct Complex_num {
 	Complex_num& operator*= (const Complex_num& another);
 	Complex_num& operator*= (double num);
 	Complex_num& operator/= (double num);
-
+	Complex_num& operator= (const Complex_num& another);
 };
+
+Complex_num operator+ (double num, const Complex_num& another);
+Complex_num operator- (double num, const Complex_num& another);
+Complex_num operator* (double num, const Complex_num& another);
 
 #endif

@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cmath>
 #include "../includes/complex_header.hpp"
 
@@ -93,4 +92,22 @@ Complex_num& Complex_num::operator/= (double num) {
 	real_part /= num;
 	imag_part /= num;
 	return *this;
+}
+
+Complex_num& Complex_num::operator= (const Complex_num& another){
+	real_part = another.real_part;
+	imag_part = another.imag_part;
+	return *this;
+}
+
+Complex_num operator+ (double num, const Complex_num& another) {
+	return Complex_num(num + another.real_part, another.imag_part);
+}
+
+Complex_num operator- (double num, const Complex_num& another) {
+	return Complex_num(num - another.real_part, another.imag_part);
+}
+
+Complex_num operator* (double num, const Complex_num& another) {
+	return Complex_num(another.real_part * num, another.imag_part * num);
 }

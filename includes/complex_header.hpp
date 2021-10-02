@@ -33,4 +33,7 @@ Complex_num operator+ (double num, const Complex_num& another);
 Complex_num operator- (double num, const Complex_num& another);
 Complex_num operator* (double num, const Complex_num& another);
 
+std::istream& operator>>(std::istream& in, Complex_num& num);
+std::ostream& operator<<(std::ostream& out, const Complex_num& num);
+
 #endif

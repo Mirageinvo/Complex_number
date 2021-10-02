@@ -1,3 +1,4 @@
+#include <iostream>
 #include <cmath>
 #include "../includes/complex_header.hpp"
 
@@ -110,4 +111,15 @@ Complex_num operator- (double num, const Complex_num& another) {
 
 Complex_num operator* (double num, const Complex_num& another) {
 	return Complex_num(another.real_part * num, another.imag_part * num);
+}
+
+
+std::istream& operator>> (std::istream& in, Complex_num& num) {
+	in >> num.real_part >> num.imag_part;
+	return in;
+}
+
+std::ostream& operator<< (std::ostream& out, const Complex_num& num) {
+	out << num.real_part << " " << num.imag_part;
+	return out;
 }

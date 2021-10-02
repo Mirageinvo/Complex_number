@@ -22,7 +22,6 @@ bool test_16();
 bool test_17();
 
 int main() {
-
 	bool tests_passed = start_tests();
 	if (tests_passed) {
 		std::cout << "All the tests have been successfully passed" << std::endl;
@@ -30,7 +29,6 @@ int main() {
 	else {
 		std::cout<< "Some tests have failed" << std::endl;
 	}
-	
 	return 0;
 }
 

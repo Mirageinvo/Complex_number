@@ -120,6 +120,6 @@ std::istream& operator>> (std::istream& in, Complex_num& num) {
 }
 
 std::ostream& operator<< (std::ostream& out, const Complex_num& num) {
-	out << num.real_part << " " << num.imag_part;
+	out << num.real_part << " + " << num.imag_part << "i";
 	return out;
 }

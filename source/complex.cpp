@@ -29,7 +29,7 @@ bool Complex_num::operator== (const Complex_num& another) const {
 bool Complex_num::operator!= (const Complex_num& another) const {
 	if (fabs(real_part - another.real_part) < 1e-9 && fabs(imag_part - another.imag_part) < 1e-9)
 		return false;
-	return true;
+	return true; 
 }
 
 

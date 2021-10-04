@@ -59,6 +59,7 @@ bool test_2 () {
     }
     if (!(tmp_f != tmp_t)) {
         std::cout << "Test 2 has failed" << std::endl;
+	return false;
     }
     return true;
 }

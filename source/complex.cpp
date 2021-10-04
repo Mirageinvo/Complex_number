@@ -106,7 +106,7 @@ Complex_num operator+ (double num, const Complex_num& another) {
 }
 
 Complex_num operator- (double num, const Complex_num& another) {
-	return Complex_num(num - another.real_part, another.imag_part);
+	return Complex_num(num - another.real_part, -another.imag_part);
 }
 
 Complex_num operator* (double num, const Complex_num& another) {

@@ -27,7 +27,7 @@ int main() {
 		std::cout << "All the tests have been successfully passed" << std::endl;
 	}
 	else {
-		std::cout<< "Some tests have failed" << std::endl;
+		std::cout << "Some tests have failed" << std::endl;
 	}
 	return 0;
 }
@@ -257,23 +257,23 @@ bool test_17 () {
 bool start_tests() {
     bool result = true;
     
-    result &= test_1();
-    result &= test_2();
-    result &= test_3();
-    result &= test_4();
-    result &= test_5();
-    result &= test_6();
-    result &= test_7();
-    result &= test_8();
-    result &= test_9();
-    result &= test_10();
-    result &= test_11();
-    result &= test_12();
-    result &= test_13();
-    result &= test_14();
-    result &= test_15();
-    result &= test_16();
-    result &= test_17();
+    result = result && test_1();
+    result = result && test_2();
+    result = result && test_3();
+    result = result && test_4();
+    result = result && test_5();
+    result = result && test_6();
+    result = result && test_7();
+    result = result && test_8();
+    result = result && test_9();
+    result = result && test_10();
+    result = result && test_11();
+    result = result && test_12();
+    result = result && test_13();
+    result = result && test_14();
+    result = result && test_15();
+    result = result && test_16();
+    result = result && test_17();
 
     return result;
 }
